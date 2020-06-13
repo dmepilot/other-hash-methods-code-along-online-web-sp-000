@@ -11,8 +11,8 @@ require 'pry'
 def get_the_values(groceries)
   #code your solution here
   new_array=[]
-  groceries.each do |keys, val|
-    new_array=keys.values.flatten
+  groceries.each_value do |val|
+    new_array=val.values.flatten
   end
   new_array
 end
